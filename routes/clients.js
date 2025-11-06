@@ -1,6 +1,6 @@
 var clients = [{ id: 1, nom: 'Jean', prenom: 'Truc' }]; //un client par défaut
 exports.index = function (req, res) {
-    res.render("clients/clients.ejs", { clients: clients });
+    res.render("clients/clients.ejs", { clients: clients, nbClients:clients.length });
 };
 exports.new = function (req, res) {
     res.render("clients/new.ejs");
